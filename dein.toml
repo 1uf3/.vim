@@ -21,6 +21,8 @@ repo = 'itchyny/vim-cursorword'
 ########### comment ###########
 [[plugins]]
 repo = 'tpope/vim-commentary'
+[[plugins]]
+repo = 'tyru/caw.vim'
 
 ############ file ############
 [[plugins]]
@@ -96,6 +98,8 @@ repo = 'rust-lang/rust.vim'
 repo = 'mattn/vim-goimports'
 [[plugins]] #TDD
 repo = 'sebdah/vim-delve'
+[[plugins]]
+repo = 'buoto/gotests-vim'
 
 ########## TypeScript ##########
 [[plugins]] 
