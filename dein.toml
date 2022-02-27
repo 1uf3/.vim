@@ -1,0 +1,110 @@
+####### color schemes ########
+[[plugins]]
+repo = 'ghifarit53/tokyonight-vim'
+
+######### status line #########
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+###### Syntax highlight #######
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+[[plugins]]
+repo = 'vim-jp/syntax-vim-ex'
+
+########## Interface ##########
+[[plugins]]
+repo = 'itchyny/vim-cursorword'
+
+########### comment ###########
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+############ file ############
+[[plugins]]
+repo = 'preservim/nerdtree'
+
+############ move ############
+[[plugins]]
+repo = 'andymass/vim-matchup'
+[[plugins]]
+repo = 'cohama/lexima.vim'
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+[[plugins]]
+repo = 'jremmen/vim-ripgrep'
+
+########## document ##########
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+############ lsp's ############
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+[[plugins]]
+repo = 'thomasfaingnaert/vim-lsp-snippets'
+[[plugins]]
+repo = 'thomasfaingnaert/vim-lsp-ultisnips'
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+############# fzf #############
+[[plugins]]
+repo = 'junegunn/fzf'
+build_on = './install --bin'
+merged = '0'
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+hook_add = '''
+  command! -bang -nargs=* Rg
+    \ call fzf#vim#grep(
+    \   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
+    \   fzf#vim#with_preview({'options': '--exact --reverse'}, 'right:50%:wrap'))
+'''
+
+############# git #############
+[[plugins]]
+repo = 'lambdalisue/gina.vim'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+########### quickrun ###########
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+########### Markdown ###########
+[[plugins]]
+repo = 'previm/previm'
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+############ hlsl ############
+[[plugins]]
+repo = 'beyondmarc/hlsl.vim'
+
+############# Rust #############
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+
+############## Go ##############
+[[plugins]]
+repo = 'mattn/vim-goimports'
+[[plugins]] #TDD
+repo = 'sebdah/vim-delve'
+
+########## TypeScript ##########
+[[plugins]] 
+repo = 'leafgarland/typescript-vim'
+
+############# git #############
+[[plugins]] 
+repo = 'posva/vim-vue'
