@@ -46,10 +46,6 @@ repo = 'prabirshrestha/vim-lsp'
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
 [[plugins]]
-repo = 'thomasfaingnaert/vim-lsp-snippets'
-[[plugins]]
-repo = 'thomasfaingnaert/vim-lsp-ultisnips'
-[[plugins]]
 repo = 'prabirshrestha/asyncomplete.vim'
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete-lsp.vim'
