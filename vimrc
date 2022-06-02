@@ -1,4 +1,5 @@
 "dein.vim settings {{{
+"
 " install dir {{{
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -97,8 +98,13 @@ set hlsearch
 let mapleader = "\<Space>"
 
 if has('terminal')
-  nnoremap <Leader>t :terminal<CR>
+  nnoremap <Leader>t :bo terminal! ++rows=10<CR>
   tnoremap <silent>jj <C-\><C-N>
+endif
+
+if !has('gui_running') && &term =~ '^\%(screen\|tmux\)'
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
 
 "jj to Normal mode
